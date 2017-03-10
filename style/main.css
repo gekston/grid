@@ -1,0 +1,27 @@
+.container {
+  display: grid;
+  grid-row-gap: 5px;
+  grid-column-gap: 10px;
+  grid-template-columns: 40% 40%;
+  justify-content: center;
+}
+.wrapper {
+  display: grid;
+  grid-gap: 10px;
+}
+.resolution {
+  font-size: 150%;
+  padding: 20px 0;
+}
+.resolution:after {
+  display: block;
+  text-align: center;
+}
+.box {
+  background-color: #444;
+  color: var(--white);
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+  text-transform: uppercase;
+}
