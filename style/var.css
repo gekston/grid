@@ -1,5 +1,9 @@
 :root {
   --white: #FFFFFF;
-  --black: #444444;
+  --box-color: #444444;
+  --box-color-red: 68;
+  --box-color-green: 68;
+  --box-color-blue: 68;
   --base-box-padding: 20px;
+  --base-col-width: 40%;
 }

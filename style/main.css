@@ -6,7 +6,7 @@ body {
   display: grid;
   grid-row-gap: 5px;
   grid-column-gap: 10px;
-  grid-template-columns: 40% 40%;
+  grid-template-columns: [col1-start] var(--base-col-width) [col2-start] var(--base-col-width);
   justify-content: center;
 }
 .wrapper {
@@ -22,10 +22,34 @@ body {
   text-align: center;
 }
 .box {
-  background-color: var(--black);
+  background-color: rgb(var(--box-color-red), var(--box-color-green), var(--box-color-blue));
   color: var(--white);
   border-radius: 5px;
   padding: var(--base-box-padding);
   font-size: 150%;
   text-transform: uppercase;
+}
+input[type=range]::-moz-range-track {
+  background-color: grey;
+  outline: none;
+}
+.boxColor {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+.boxColor__red[type=range]::-moz-range-track {
+  background-color: red;
+}
+.boxColor__green[type=range]::-moz-range-track {
+  background-color: green;
+}
+.boxColor__blue[type=range]::-moz-range-track {
+  background-color: blue;
+}
+.boxColor__red[type=range],
+.boxColor__green[type=range],
+.boxColor__blue[type=range]::focus {
+  outline: none;
 }

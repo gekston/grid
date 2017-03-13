@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Grid + Flex</title>
   <link rel="stylesheet" type="text/css" media="all" href="/style/style.css" />
-  <script type="text/javascript" charset="utf-8" async="" src="./app/style.js"></script>
 </head>
 <body>
   <div class="container">
@@ -21,5 +21,16 @@
     </div>
   </div>
   <div class="resolution"></div>
+  <input class="colWidth" type="range" value="" min="20" max="49" step="1" value="40" /> - change width
+  <div class="boxColor">
+    <h3>Change color box</h3>
+    <input class="boxColor__red" type="range" value="68" min="0" max="255" step="1" />
+    <span>Red</span>
+    <input class="boxColor__green" type="range" value="68" min="0" max="255" step="1" />
+    <span>Green</span>
+    <input class="boxColor__blue" type="range" value="68" min="0" max="255" step="1" />
+    <span>Blue</span>
+  </div>
+  <script type="text/javascript" charset="utf-8" async="" src="./app/style.js"></script>
 </body>
 </html>
